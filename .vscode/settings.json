@@ -1,0 +1,5 @@
+{
+     "prettier.ignorePath": "",
+     "prettier.printWidth": 100,
+     "prettier.withNodeModules": true
+}
