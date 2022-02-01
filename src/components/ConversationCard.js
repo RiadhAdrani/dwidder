@@ -11,7 +11,7 @@ export default (conv) => {
      const [currentUser] = getState("current-user");
 
      const [user, setUser] = setState(`user-${conv.user}`, UserModel.loadingUser(), () => {
-          GetUserInfo(conv.uid).then((doc) => setUser(UserModel.fromData(doc.data())));
+          GetUserInfo(conv.user).then((doc) => setUser(UserModel.fromData(doc.data())));
      });
 
      return user.isLoading
